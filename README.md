@@ -1,42 +1,70 @@
-# event-reminder
-A Java-based event reminder system that allows users to manage events with details like name, date, time, description, category, and priority. The system supports adding, updating, deleting, searching, and viewing events, as well as checking upcoming reminders within a specified time window.
+# 📅 Event Reminder – Java Console Application
 
-Features
+This is a simple **Java-based console project** that allows users to **create, schedule, and manage reminders for different events**. It demonstrates basic object-oriented programming concepts such as classes, inheritance, encapsulation, and modular design.
 
-Add events with unique IDs, names, dates, times, descriptions, categories, and priorities.
+---
 
-Update or delete existing events by ID.
+## 🚀 Features
 
-Search events by name or category.
+- Add new events with a name and time
+- Schedule reminders
+- List all upcoming events
+- Basic time simulation to trigger events
+- Structured and modular Java code
 
-View all events sorted by date and time.
+---
 
-Check upcoming events within a 24-hour window.
+## 📁 Project Structure
 
-User-friendly console interface with input validation.
+```
+event-reminder/
+├── README.md
+└── src/
+    └── com/
+        └── eventreminder/
+            ├── app/
+            │   └── MainApplication.java        # Entry point of the application
+            └── core/
+                ├── EventManager.java           # Handles list of events
+                └── EventScheduler.java         # Logic for simulating reminders
+```
 
-Project Structure
+---
 
-src/com/eventreminder/app/MainApplication.java: Main class with the console interface.
+## ⚙️ How to Run the Project
 
-src/com/eventreminder/core/EventManager.java: Manages event storage and operations.
+### Step 1: Requirements
+- Java installed (JDK 8 or above)
+- Any IDE like VS Code, IntelliJ, or run via terminal
 
-src/com/eventreminder/core/EventScheduler.java: Handles event scheduling and reminders.
+### Step 2: Compile the code
+Navigate to the `src` directory and run:
 
-README.md: Project documentation.
+```bash
+javac com/eventreminder/app/MainApplication.java
+```
 
-How to Run
+### Step 3: Run the program
 
-Ensure Java is installed (JDK 8 or higher).
+```bash
+java com.eventreminder.app.MainApplication
+```
 
-Compile and run MainApplication.java from the src/com/eventreminder/app directory.
+## 🙋‍♂️ Author
 
-Follow the console prompts to interact with the system.
+- 👤 Name: **Vinay Kumar**
+- 🌐 GitHub: [vinay-kumar2](https://github.com/vinay-kumar2)
 
-Example Usage
+---
 
-Add an event: Enter ID, name, date (yyyy-MM-dd), time (HH:mm), description, category, and priority.
+## 📜 License
 
-Search by name or category to find specific events.
+This project is open-source and free to use.
 
-Check reminders to see events within the next 24 hours.
+---
+
+## 💡 Contribution
+
+Feel free to fork the repository and submit pull requests to improve or extend this project.
+
+---
